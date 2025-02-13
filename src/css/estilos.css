@@ -1,0 +1,82 @@
+:root{
+    --main-color: hsl(257, 40%, 49%);
+    --highlight-color: hsl(300, 69%, 71%);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--main-color);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    color: #fff;
+    position: relative;
+    height: 100vh;
+    font-size: 1.15rem;
+}
+
+.logo{
+    width: 150px;
+    margin: 50px;
+}
+
+body::after{
+   content: '';
+   background: url(../images/bg-desktop.svg) center center no-repeat;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   z-index: -1;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    margin: 20px 50px 0;
+}
+
+.hero .mockups{
+    height: 100%;
+    width: 100%;
+}
+
+.hero .hero-text{
+    padding: 50px 30px;
+}
+
+.hero-text h2{
+    font-size: 2.5rem;
+    padding-bottom: 8px;
+    font-weight: 500;
+}
+
+.register{
+    margin-top: 20px;
+    padding: 10px 40px;
+    font-size: 1.15rem;
+    color: var(--main-color);
+    border-radius: 20px;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.register:hover{
+    color: #fff;
+    background-color: var(--highlight-color);
+}
+
+.social{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 50px 50px 40px;
+}
+
+.social a{
+    color: #fff;
+    padding: 6px;
+    font-size: 2rem;
+}
